@@ -1,8 +1,15 @@
-# React + Vite
+#The wild oasis is the full stack web app
+It a an hotel management system! admin can add employees to access !
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key features:
+1.Autentivcation
+2.Real pie chart & gragh of the bookings
+3.Real database , storage APi
 
-Currently, two official plugins are available:
+<!-- libraries -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. react query
+2. context API
+3. React icon
+4. recahrt
+   5.supabase

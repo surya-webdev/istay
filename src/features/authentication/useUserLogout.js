@@ -14,6 +14,6 @@ export function useUserLogout() {
       navigate("login", { replace: true });
     },
   });
-
   return { logoutMutate, isLoading };
+  //
 }

@@ -17,15 +17,13 @@ const Main = styled.main`
   padding: 4rem 4.8rem 6.4rem;
   background-color: var(--color-grey-50);
 `;
-{
-  /* <Uploader /> */
-}
 
 function Applayout() {
   return (
     <StyledApplayout>
       <Header />
       <Sidebar />
+      {/* <Uploader /> */}
       <Main>
         <Outlet />
       </Main>

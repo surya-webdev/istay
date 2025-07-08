@@ -7,6 +7,7 @@ function useBookingId() {
 
   const { data: booking, isLoading } = useQuery({
     queryKey: ["bookings", bookingId],
+
     queryFn: () => getBooking(bookingId),
   });
 

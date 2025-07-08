@@ -58,9 +58,11 @@ export async function newUser({ email, password, fullName }) {
   return data;
 }
 
+//
 export async function updateCurrentUser({ fullName, password, avatar }) {
   // 1)update fullName or Password
   let updateUserData;
+
   if (fullName) updateUserData = { data: { fullName } };
   if (password) updateUserData = { password };
 
@@ -71,6 +73,7 @@ export async function updateCurrentUser({ fullName, password, avatar }) {
   if (error) {
     throw new Error(error.message);
   }
+
   // update avatar
   const fileName = `avatar-${data.user.id}-${Math.random()}`;
 

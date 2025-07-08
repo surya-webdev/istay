@@ -20,6 +20,7 @@ import { DarkModeContext } from "./context/DarkModeContext";
 
 function App() {
   const queryClient = new QueryClient();
+
   return (
     <>
       <DarkModeContext>

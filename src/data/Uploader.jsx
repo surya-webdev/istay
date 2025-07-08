@@ -91,12 +91,13 @@ async function createBookings() {
       cabinPrice,
       extraPrice,
       totalPrice,
-      guests: allGuestIds.at(booking.guestId - 1),
+      guestId: allGuestIds.at(booking.guestId - 1),
       cabinId: allCabinIds.at(booking.cabinId - 1),
       status,
     };
   });
 
+  console.log("final");
   console.log(finalBookings);
 
   const { error } = await supabase.from("bookings").insert(finalBookings);

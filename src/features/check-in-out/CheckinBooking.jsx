@@ -26,6 +26,7 @@ const Box = styled.div`
 
 function CheckinBooking() {
   const { booking, isLoading } = useBookingId();
+
   const moveBack = useMoveBack();
   const [isConfirm, setIsConfirm] = useState(false);
   const [isBreak, setIsBreak] = useState(false);

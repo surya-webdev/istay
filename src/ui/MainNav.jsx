@@ -54,8 +54,9 @@ const StyleNavLink = styled(NavLink)`
 `;
 
 function MainNav() {
+  // const pathname = usePathname(
   return (
-    <nav>
+    <nav style={{ height: "100svh" }}>
       <NavList>
         <li>
           <StyleNavLink to={"/dashboard"}>

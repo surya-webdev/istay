@@ -24,7 +24,7 @@ function Applayout() {
       <Header />
       <Sidebar />
       {/* <Uploader /> */}
-      <Main>
+      <Main style={{ overflowY: "scroll" }}>
         <Outlet />
       </Main>
     </StyledApplayout>

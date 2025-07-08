@@ -10,6 +10,8 @@ function BookingTable() {
 
   const { bookings, isLoading, count } = useBookingApi();
 
+  console.log(bookings);
+
   if (isLoading) return <Spinner />;
 
   if (bookings === undefined) return <Spinner />;

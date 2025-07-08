@@ -27,7 +27,9 @@ function BookingDetail() {
   const { booking = {}, isLoading } = useBookingId();
   const navigate = useNavigate();
   const { checkOutMutate, isCheckOut } = useCheckOut();
+
   const moveBack = useMoveBack();
+
   const { deleteMutate, isDeleteBooking } = useBookingDelete();
 
   if (!booking.length) return <Empty resource="Bookings" />;

@@ -74,7 +74,7 @@ function SalesChart({ bookings, numDays }) {
     end: new Date(),
   });
 
-  // console.log(allDates);
+  console.log(allDates);
 
   const data = allDates.map((date) => {
     return {

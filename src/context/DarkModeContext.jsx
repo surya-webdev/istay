@@ -9,13 +9,13 @@ function DarkModeContext({ children }) {
   useEffect(
     function () {
       if (isDark) {
-        document.documentElement.classList.add("dark-mode");
+        document.documentElement.classList.add("light-mode");
 
-        document.documentElement.classList.remove("light-mode");
+        document.documentElement.classList.remove("dark-mode");
       }
       if (!isDark) {
-        document.documentElement.classList.add("light-mode");
-        document.documentElement.classList.remove("dark-mode");
+        document.documentElement.classList.add("dark-mode");
+        document.documentElement.classList.remove("light-mode");
       }
     },
     [isDark]

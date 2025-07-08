@@ -37,11 +37,14 @@ const FilterButton = styled.button`
 
 function Filter({ value: URL, options }) {
   const [searchParams, setSearchParams] = useSearchParams();
+
   const activeUrl = searchParams.get(URL) || options.at(0).value;
 
   function handleSearch(value) {
     searchParams.set(URL, value);
+
     if (searchParams.get("page")) searchParams.set("page", 1);
+
     setSearchParams(() => searchParams);
   }
   return (

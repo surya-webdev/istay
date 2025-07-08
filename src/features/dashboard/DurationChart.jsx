@@ -146,6 +146,7 @@ function DurationChart({ confirmStays }) {
   const { isDark } = useContextDark();
   const styleData = isDark ? startDataDark : startDataLight;
   const data = prepareData(styleData, confirmStays);
+  console.log()
   console.log(data);
   return (
     <ChartBox>
